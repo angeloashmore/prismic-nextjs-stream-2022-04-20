@@ -13,10 +13,18 @@ const components = {
 const IndexPage = () => {
   return (
     <Layout>
-      <div className="bg-green-800 p-4 text-sm font-bold text-white">
-        This page uses 😴 lazy components
+      <div className="flex gap-3 bg-green-800 p-4 text-sm font-bold text-white">
+        <span>
+          This page uses 😴 lazy components with <code>React.lazy</code>
+        </span>
+        <Link href="/dynamic">
+          <a className="font-normal text-white/60">
+            See the <code>next/dynamic</code> version &rarr;
+          </a>
+        </Link>
+        <span className="font-normal text-white/30">or</span>
         <Link href="/eager">
-          <a className="ml-3 font-normal text-white/60">
+          <a className="font-normal text-white/60">
             See the eager version &rarr;
           </a>
         </Link>
