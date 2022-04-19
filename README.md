@@ -10,7 +10,8 @@ npm install
 npm run dev
 ```
 
-This demo has two pages:
+This demo has three pages:
 
 - `/`: Demonstrates lazy-loading components with `React.lazy()`.
+- `/dynamic`: Demonstrates lazy-loading components with `next/dynamic`.
 - `/eager`: Demonstrates eager-loaded components using standard `import`s.
